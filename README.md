@@ -1,5 +1,5 @@
 # Xish Shell
-### Assignment 1 | CIS\*3050 Systems Programming | Fall 2025
+### CIS\*3050 Systems Programming A1 | Fall 2025
 
 The name xish stands for "eXcellent Interprocess Communication Shell". Blame my professor for the horrible name.
 
