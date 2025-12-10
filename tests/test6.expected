@@ -1,0 +1,61 @@
+SHELL PID <PID>
+this tests background programs
+Child(<PID>) exited -- success (0)
+[1] background process <PID>
+testing?
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+cleared.
+Child(<PID>) exited -- success (0)
+[2] background process <PID>
+[3] background process <PID>
+[4] background process <PID>
+[5] background process <PID>
+[6] background process <PID>
+      1      12      55
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+------------------
+Child(<PID>) exited -- success (0)
+[7] background process <PID>
+[8] background process <PID>
+[9] background process <PID>
+/usr/include/check_stdint.h
+/usr/include/stdc-predef.h
+/usr/include/stdint.h
+/usr/include/stdio_ext.h
+/usr/include/stdio.h
+/usr/include/stdlib.h
+/usr/include/unistd.h
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+------------------
+Child(<PID>) exited -- success (0)
+[10] background process <PID>
+[11] background process <PID>
+Failed to exec command 'grep.c' : No such file or directory
+Child(<PID>) exited -- success (0)
+Child(<PID>) crashed
+Child(<PID>) exited -- failure (1)
+------------------
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+im done sleeping now
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+donesleep 1
+Child(<PID>) exited -- success (0)
+------------------
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+im done sleeping now
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+done
+Child(<PID>) exited -- success (0)

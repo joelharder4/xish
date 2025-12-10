@@ -1,0 +1,4 @@
+*.o
+xish
+tests/*.output
+.vscode/

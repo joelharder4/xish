@@ -1,0 +1,14 @@
+SHELL PID <PID>
+have a nice day
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+again
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+    1	hello
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+hello
+Child(<PID>) exited -- success (0)

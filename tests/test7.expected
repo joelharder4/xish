@@ -1,0 +1,36 @@
+SHELL PID <PID>
+this tests more background processes
+Child(<PID>) exited -- success (0)
+[1] background process <PID>
+[2] background process <PID>
+[3] background process <PID>
+[4] background process <PID>
+[5] background process <PID>
+tick.
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+tick..
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+tick...
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+tick....
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+tick.....
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+tick......
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+tick.......
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+done
+Child(<PID>) exited -- success (0)

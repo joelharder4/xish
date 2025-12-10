@@ -1,0 +1,3 @@
+SHELL PID <PID>
+hello
+Child(<PID>) exited -- success (0)

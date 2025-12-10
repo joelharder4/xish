@@ -1,0 +1,27 @@
+SHELL PID <PID>
+this tests globbing
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+file1.txt
+file2.txt
+Child(<PID>) exited -- success (0)
+------------
+Child(<PID>) exited -- success (0)
+file1.txt
+file2.txt
+file3.tx
+file4.out
+Child(<PID>) exited -- success (0)
+------------
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+      1       1       9
+Child(<PID>) exited -- success (0)
+I love seeing that file1.txt file2.txt file3.tx file4.out has not left me, so please give me file4.out
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)

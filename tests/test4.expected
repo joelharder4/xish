@@ -1,0 +1,10 @@
+SHELL PID <PID>
+this tests variable substitution
+Child(<PID>) exited -- success (0)
+(a_lol)! who is bigger_lol?
+Child(<PID>) exited -- success (0)
+Child(<PID>) exited -- success (0)
+myron_is_bigger_lol_and_roman_is_a_lol
+Child(<PID>) exited -- success (0)
+{bigger_lol}, fishy myron_is_bigger_lol_and_roman_is_a_lol
+Child(<PID>) exited -- success (0)

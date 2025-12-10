@@ -1,0 +1,64 @@
+#!/bin/sh
+
+#
+# Simple test harness for "xish" shell
+#
+
+passed=0
+failed=0
+verbose=0
+
+# ANSI color codes (thanks AI)
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+BOLD='\033[1m'
+NC='\033[0m' # No Color
+
+# Check for -v flag
+if [ "$1" = "-v" ]; then
+    verbose=1
+fi
+
+echo "Running tests..."
+
+for file in tests/test*.cmd
+do
+    base="${file%.cmd}"
+    expected="${base}.expected"
+    output="${base}.output"
+    
+    testname=$(basename "${file}")
+
+    ./xish "${file}" > "${output}" 2>&1
+    status=$?
+
+    # Normalize output and expected files to ignore PID differences
+    sed -E 's/SHELL PID [0-9]+/SHELL PID <PID>/g; s/Child\([0-9]+\)/Child(<PID>)/g; s/background process [0-9]+/background process <PID>/g' "${output}" > "${output}.normalized"
+    # sed -E 's/SHELL PID [0-9]+/SHELL PID <PID>/g; s/Child\([0-9]+\)/Child(<PID>)/g' "${expected}" > "${expected}.normalized"
+    
+    if diff "${expected}" "${output}.normalized" > /dev/null 2>&1; then
+        printf "${GREEN}[✓] PASS${NC} - ${testname}\n"
+        passed=$((passed + 1))
+    else
+        printf "${RED}[X] FAILED${NC} - ${testname}\n"
+        if [ $verbose -eq 1 ]; then
+            diff "${expected}" "${output}.normalized"
+            echo ""
+        fi
+        failed=$((failed + 1))
+    fi
+    
+    rm -f "${output}.normalized"
+done
+
+echo ""
+printf "${BOLD}Test Results:${NC} ${GREEN}${passed} passed${NC}, "
+if [ ${failed} -gt 0 ]; then
+    printf "${RED}${failed} failed${NC}\n"
+else
+    printf "${failed} failed\n"
+fi
+
+if [ ${failed} -gt 0 ]; then
+    exit 1
+fi

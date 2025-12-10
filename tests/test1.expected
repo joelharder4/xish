@@ -1,0 +1,3 @@
+SHELL PID <PID>
+hello there this is a test
+Child(<PID>) exited -- success (0)
